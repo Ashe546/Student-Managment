@@ -24,8 +24,16 @@
   color: white;
 }
 
+.table{
+  display: flex;
+  flex-direction: row;
+}
+
 .App-link {
   color: #61dafb;
+}
+.active {
+  background-color: #f3f4f6;
 }
 
 @keyframes App-logo-spin {

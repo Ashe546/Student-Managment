@@ -1,19 +1,19 @@
 import './App.css';
-import React, { useState, useEffect } from "react"
-import useFetch from './hooks/use-featch';
-import getNames from './services/get-names';
-
+import Home from "./Component/home/index" 
+import { Routes, Route } from 'react-router-dom';
+import Teachers from './Component/Teacher/all-teachers';
+import Teacherdetail from './Component/Teacher/teacher-detail';
 
 
 export default function App() {
 
-  const { data: names, loading } = useFetch(getNames, []);
-  const api = JSON.stringify(names)
-
   return (
-    
     <div>
-     { loading ? <>loading</> : <>{api}</> }
+      <Home />
+      <Routes>
+        <Route path='/teacher' element={<Teachers />}></Route>
+        <Route path='/detail' element={<Teacherdetail />}></Route>
+      </Routes>
     </div>
   )
 }
