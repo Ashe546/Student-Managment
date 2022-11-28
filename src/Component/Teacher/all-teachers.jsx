@@ -238,10 +238,6 @@ export default function Teachers() {
               <td className="py-3 px-4"><p className='min-w-max text-center'>abcde@gmail.com</p></td>
               <td className="py-3 px-4"><p className='min-w-max text-center'>...</p></td>
             </tr>
-
-
-           
-
           </tbody>
         </table>
       </div>
